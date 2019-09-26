@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="site-list">
+                <li class="site-list__item">
+                    <a class="site-list__link" href="">Портфолио</a></li>
+                <li class="site-list__item">
+                        <a class="site-list__link" href="">О себе</a></li>
+                <li class="site-list__item">
+                        <a class="site-list__link" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1 class="visually-hidden">Сайт визитка Nikita Kochetkov</h1>
+        <div class="title">
+            <p class="title__name title__name--left">Kochetkov</p>
+            <p class="title__name title__name--right">Nikita</p>
+        </div>
+        <div class="main-photo">
+            <img class="main-photo__img" src="" width="" height="" alt="Моя фотография">
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio container">
+            <h2 class="visually-hidden">Портфолио</h2>
+            <div class="slider">
+                <h3 class="slider__title title-section">Cat energy</h3>
+                <p class="slider__description">
+                    Данный проект был разработан при прохлждении курса в HTML Academy.
+                    Верстка по подходу mobile first, что в свою очередь помогло взглянуть
+                    на разработку с другой стороны. Так же было интересно реализовывать слайдер,
+                    не используя сторонние библиотеки.
+                </p>
+                <img src="" alt="Кот энерджи">
+                <img src="" alt="Кот энерджи">
+                <img src="" alt="Кот энерджи">
+            </div>
+
+            <div class="slider">
+                <h3 class="slider__title title-section">Device</h3>
+                <p class="slider__description">
+                    Данный макет был взят из курса HTML Academy и поставил интересные и сложные задачи,
+                    особенно по реализации декоративных элементов.
+                </p>
+                <img src="" alt="Device">
+                <img src="" alt="Device">
+                <img src="" alt="Device">
+            </div>
+
+            <div class="slider">
+                <h3 class="slider__title title-section">Auto redial</h3>
+                <p class="slider__description">
+                    Лендинг по предоставлению услуг связи. Первые пробы покорить методологию БЭМ и скоростная верстка,
+                    реализация интересных декоративных элементов и списков через flexbox.
+                </p>
+                <img src="" alt="Кот энерджи">
+                <img src="" alt="Кот энерджи">
+                <img src="" alt="Кот энерджи">
+            </div>
+            <div class="slider-switch">
+                <input class="" type="radio" id="slide-1" name="togle" checked>
+                <input class="" type="radio" id="slide-2" name="togle">
+                <input class="" type="radio" id="slide-3" name="togle">
+
+                <label for="slide-1">Первый сайт</label>
+                <label for="slide-2">Второй сайт</label>
+                <label for="slide-3">Третий сайт</label>
+            </div>
+        </section>
+
+        <article class="about-me">
+            <div class="about-me__wrapper container">
+                <h2 class="about-me__title title-section">О себе</h2>
+                <p class="about-me__description">
+                    &emsp;&emsp;Меня зовут Никита, я начинающий веб-разработчик со страстью к изучению нового. Ищу должность веб-разработчика в продуктивной и развивающиейся компании. Моя цель не только развиваться лично, а принимать активное участие в реализации проектов и привносить свои мысли и идеи. Углубленно изучаю JS, а также новые технологии и решения для достижения лучшего UX и доступности. Есть опыт работы в группе мониторинга (общение с физ. и юр. лицами), что дало мне стрессоустойчивость и быстрое нахождение решений возникших проблем. Люблю доделывать дело до конца и точно соответствовать поставленному техническому заданию и макету. Родился на суровом севере, поэтому не боюсь испытаний и сложных задач.
+                </p>
+            </div>
+        </article>
+
+        <section class="ability container">
+            <h2 class="ability__title title-section">Навыки</h2>
+            <ul class="ability__list">
+                <li class="ability__item skill">
+                    <h3 class="skill__title">HTML</h3>
+                    <ul class="skill__list">
+                        <li class="skill__item">Хорошее знание html тегов и правильность их применения</li>
+                        <li class="skill__item">Знание семантики элементов</li>
+                        <li class="skill__item">Принципы создания доступных интерфейсов</li>
+                        <li class="skill__item">Понимание работы веб-браузера и сборки страницы</li>
+                        <li class="skill__item">Умение использовать инструменты разработчика (Chrome DevTools, Firefox), находить информацию в документации и руководствах</li>
+                        <li class="skill__item">Тестирование верстки (переполнение, валидация, форматирование)</li>
+                    </ul>
+                </li>
+                <li class="ability__item">
+                    <h3 class="skill__title">CSS</h3>
+                    <ul class="skill__list">
+                        <li class="skill__item">Умение использовать flexbox, media выражения, @-правила, псевдоэлементы и псевдоклассы. Знание специфичности и правил наследования</li>
+                        <li class="skill__item">Знание transition и animation</li>
+                        <li class="skill__item">Опыт использования препроцессоров less/sass</li>
+                        <li class="skill__item">Навыки responsive/adaptive верстки (mobile first, desktop first). Адаптивная графика (ретина)</li>
+                        <li class="skill__item">Кроссбраузерная верстка</li>
+                        <li class="skill__item">Опыт использования методологии БЭМ</li>
+                        <li class="skill__item">Следование принципу pixel perfect</li>
+                    </ul>
+                </li>
+                <li class="ability__item">
+                    <h3 class="skill__title">JS</h3>
+                    <ul class="skill__list">
+                        <li class="skill__item">Основной синтаксис. Замыкания, область видимости. This и контекст вызова.</li>
+                        <li class="skill__item">Обработчики событий и работа с DOM</li>
+                        <li class="skill__item">Базовые знания jQuery</li>
+                        <li class="skill__item">ES6 (promise, fetch, async, await)</li>
+                        <li class="skill__item">Преобразование JSON</li>
+                    </ul>
+                </li>
+                <li class="ability__item">
+                    <h3 class="skill__title">Другие технологии и средства</h3>
+                    <ul class="skill__list">
+                        <li class="skill__item">Есть понимание nmp, babel, eslint, postCss</li>
+                        <li class="skill__item">Автоматизация Gulp (знаком с Webpack)</li>
+                        <li class="skill__item">Опытный пользователь Photoshop (знаком с Figma)</li>
+                        <li class="skill__item">Git/GitHub, опыт использования командной строки</li>
+                    </ul>
+                </li>
+                <li class="ability__item">
+                    <h3 class="skill__title">Soft skills</h3>
+                    <ul class="skill__list">
+                        <li class="skill__item">Внимательность</li>
+                        <li class="skill__item">Самообучаемость</li>
+                        <li class="skill__item">Желание постоянно развиваться</li>
+                        <li class="skill__item">Ответственность</li>
+                        <li class="skill__item">Стрессоустойчивость</li>
+                        <li class="skill__item">Английский на уровне чтения технической литературы</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="feedback">
+        <div class="feedback-wrapper container">
+            <p class="feedback__desctription">Для связи со мной можно написать на почту 
+                <a class="feedback__mail" href="mailto:kochetkov.nick93@yandex.ru">kochetkov.nick93@yandex.ru</a> 
+                или использовать соц. сети
+            </p>
+            <div class="feedback__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">Вконтакте</a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">Codepan</a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">GitHub</a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">Facebook</a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">HeadHunter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
