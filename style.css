@@ -48,7 +48,6 @@ input[name="togle"] {
 
 .header {
     position: relative;
-    min-height: 790px;
     margin-bottom: 65px;
 
     background-color: #d7a223;
@@ -132,7 +131,7 @@ input[name="togle"] {
     position: absolute;
     /* width: 500px; */
     margin: 0 auto;
-    top: 50%;
+    top: 55%;
     left: 50vw;
     transform: translateX(-50%);
 }
@@ -153,6 +152,16 @@ input[name="togle"] {
 
 .title__name--right {
     /* transform: translateX(390px); */
+}
+
+.main-photo {
+    margin: 0 auto;
+    padding: 0;
+    width: 690px
+}
+
+.main-photo__img {
+    display: block;
 }
 
 .title-section {
