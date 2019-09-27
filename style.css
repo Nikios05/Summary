@@ -42,6 +42,10 @@
   overflow: hidden;
 }
 
+input[name="togle"] {
+    position: fixed;
+}
+
 .header {
     position: relative;
     min-height: 790px;
@@ -56,7 +60,7 @@
 }
 
 .main-nav {
-    padding: 20px 0;
+    padding: 20px 30px;
     margin: 0 auto;
 }
 
@@ -168,12 +172,15 @@
 }
 
 .slider__title {
-
+    margin-bottom: 10px;
 }
 
 .slider__description {
+    display: block;
     margin: 0;
+    margin-bottom: 35px;
     padding: 0;
+    min-height: 50px;
 
     font-family: "Roboto", Arial, sans-serif;
     font-style: normal;
@@ -181,6 +188,81 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+.slider__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.slider__container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.slider__img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.slider__img--big {
+    width: 600px;
+    height: 600px;
+}
+
+.slider__img--small {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+.slider__img--up {
+    top: 0;
+    left: 0;
+}
+
+.slider__img--down {
+    bottom: 0;
+    right: 0;
+}
+
+.slider--one,
+.slider--two,
+.slider--three {
+    display: none;
+}
+
+.slider-switch {
+    text-align: center;
+    font-size: 0;
+}
+
+.slider-switch label {
+    display: inline-block;
+    margin-right: 20px;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #a0a0a0;
+    border-radius: 50%;
+}
+
+#slide-1:checked ~ .slider--one,
+#slide-2:checked ~ .slider--two,
+#slide-3:checked ~ .slider--three {
+    display: block;
+    animation: 0.5s appearance ease-in;
+}
+
+#slide-1:checked ~ .slider-switch label[for="slide-1"],
+#slide-2:checked ~ .slider-switch label[for="slide-2"],
+#slide-3:checked ~ .slider-switch label[for="slide-3"] {
+    background-color: #a0a0a0;
+}
+
 
 .about-me {
     margin-bottom: 65px;
@@ -271,8 +353,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 30px;
 }
 
 .feedback__desctription {
@@ -303,4 +384,13 @@
 
 .social__item + .social__item {
     margin-left: 10px;
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

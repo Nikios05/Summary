@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="main-nav container">
+        <nav class="main-nav">
             <ul class="site-list">
                 <li class="site-list__item">
                     <a class="site-list__link" href="">Портфолио</a></li>
@@ -31,8 +31,12 @@
 
     <main>
         <section class="portfolio container">
+            <input class="visually-hidden" type="radio" id="slide-1" name="togle" checked>
+            <input class="visually-hidden" type="radio" id="slide-2" name="togle">
+            <input class="visually-hidden" type="radio" id="slide-3" name="togle">
+            
             <h2 class="visually-hidden">Портфолио</h2>
-            <div class="slider">
+            <div class="slider slider--one">
                 <h3 class="slider__title title-section">Cat energy</h3>
                 <p class="slider__description">
                     Данный проект был разработан при прохлждении курса в HTML Academy.
@@ -40,37 +44,63 @@
                     на разработку с другой стороны. Так же было интересно реализовывать слайдер,
                     не используя сторонние библиотеки.
                 </p>
-                <img src="" alt="Кот энерджи">
-                <img src="" alt="Кот энерджи">
-                <img src="" alt="Кот энерджи">
+                <div class="slider__wrapper">
+                    <p class="slider__img slider__img--big">
+                        <img src="" alt="Кот энерджи">
+                    </p>
+                    <div class="slider__container">
+                        <p class="slider__img slider__img--small slider__img--up">
+                            <img src="" alt="Кот энерджи">
+                        </p>
+                        <p class="slider__img slider__img--small slider__img--down">
+                            <img src="" alt="Кот энерджи">
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="slider">
+            <div class="slider slider--two">
                 <h3 class="slider__title title-section">Device</h3>
                 <p class="slider__description">
                     Данный макет был взят из курса HTML Academy и поставил интересные и сложные задачи,
                     особенно по реализации декоративных элементов.
                 </p>
-                <img src="" alt="Device">
-                <img src="" alt="Device">
-                <img src="" alt="Device">
+                <div class="slider__wrapper">
+                    <p class="slider__img slider__img--big">
+                        <img src="" alt="Device">
+                    </p>
+                    <div class="slider__container">
+                        <p class="slider__img slider__img--small slider__img--up">
+                            <img src="" alt="Device">
+                        </p>
+                        <p class="slider__img slider__img--small slider__img--down">
+                            <img src="" alt="Device">
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="slider">
+            <div class="slider slider--three">
                 <h3 class="slider__title title-section">Auto redial</h3>
                 <p class="slider__description">
                     Лендинг по предоставлению услуг связи. Первые пробы покорить методологию БЭМ и скоростная верстка,
                     реализация интересных декоративных элементов и списков через flexbox.
                 </p>
-                <img src="" alt="Кот энерджи">
-                <img src="" alt="Кот энерджи">
-                <img src="" alt="Кот энерджи">
+                <div class="slider__wrapper">
+                    <p class="slider__img slider__img--big">
+                        <img src="" alt="Auto redial">
+                    </p>
+                    <div class="slider__container">
+                        <p class="slider__img slider__img--small slider__img--up">
+                            <img src="" alt="Auto redial">
+                        </p>
+                        <p class="slider__img slider__img--small slider__img--down">
+                            <img src="" alt="Auto redial">
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="slider-switch">
-                <input class="" type="radio" id="slide-1" name="togle" checked>
-                <input class="" type="radio" id="slide-2" name="togle">
-                <input class="" type="radio" id="slide-3" name="togle">
-
                 <label for="slide-1">Первый сайт</label>
                 <label for="slide-2">Второй сайт</label>
                 <label for="slide-3">Третий сайт</label>
@@ -147,7 +177,7 @@
     </main>
 
     <footer class="feedback">
-        <div class="feedback-wrapper container">
+        <div class="feedback-wrapper">
             <p class="feedback__desctription">Для связи со мной можно написать на почту 
                 <a class="feedback__mail" href="mailto:kochetkov.nick93@yandex.ru">kochetkov.nick93@yandex.ru</a> 
                 или использовать соц. сети
