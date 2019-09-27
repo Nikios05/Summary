@@ -250,6 +250,7 @@ input[name="togle"] {
     height: 18px;
     border: 3px solid #a0a0a0;
     border-radius: 50%;
+    transition: 0.2s background-color ease-in;
 }
 
 #slide-1:checked ~ .slider--one,
@@ -291,6 +292,10 @@ input[name="togle"] {
     font-size: 24px;
     line-height: 30px;
     color: rgb(255, 255, 255);
+}
+
+.ability {
+    margin-bottom: 65px;
 }
 
 .ability__title {
@@ -363,9 +368,10 @@ input[name="togle"] {
 }
 
 .skill__item {
+    position: relative;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 25px;
 
     font-family: "Roboto", Arial, sans-serif;
     font-style: normal;
@@ -375,7 +381,14 @@ input[name="togle"] {
 }
 
 .skill__item::before {
-    content: "-"
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #a0a0a0;
+    border-radius: 50%;
 }
 
 .feedback {
@@ -392,12 +405,12 @@ input[name="togle"] {
 .feedback__desctription {
     margin: 0;
     padding: 0;
-    width: 445px;
+    width: 350px;
 
     font-family: "Roboto", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: rgb(255, 255, 255);
 }
@@ -428,6 +441,7 @@ input[name="togle"] {
     vertical-align: middle;
     width: 50px;
     height: 50px;
+    text-align: center;
 }
 
 .social__link--vk {
@@ -440,6 +454,19 @@ input[name="togle"] {
 
 .social__link--git {
     background: url("img/social-github.svg") no-repeat 50% 50%;
+}
+
+.social__link--hh {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .social__link:hover {
