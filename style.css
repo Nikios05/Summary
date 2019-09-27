@@ -205,8 +205,9 @@ input[name="togle"] {
     display: block;
     margin: 0;
     padding: 0;
+    border: 1px solid #a0a0a0;
     border-radius: 10px;
-    border: 1px solid;
+    overflow: hidden;
 }
 
 .slider__img--big {
@@ -243,6 +244,7 @@ input[name="togle"] {
 
 .slider-switch label {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 20px;
     width: 18px;
     height: 18px;
@@ -309,16 +311,47 @@ input[name="togle"] {
 }
 
 .skill__title {
+    position: relative;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
-    padding-left: 45px;
+    padding-left: 40px;
 
     font-family: "Roboto", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
+}
+
+.skill__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 36px;
+    background-size: cover;
+}
+
+.skill__title--icon-html::before {
+    background: url("img/HTML5.svg") no-repeat 50% 50%;
+}
+
+.skill__title--icon-css::before  {
+    background: url("img/CSS3.svg") no-repeat 50% 50%;
+}
+
+.skill__title--icon-js::before  {
+    background: url("img/JS.svg") no-repeat 50% 50%;
+}
+
+.skill__title--icon-gears::before  {
+    background: url("img/gears.svg") no-repeat 50% 50%;
+}
+
+.skill__title--icon-soft::before  {
+    background: url("img/soft-skills.svg") no-repeat 50% 50%;
 }
 
 .skill__list {
@@ -375,6 +408,10 @@ input[name="togle"] {
     text-decoration: none;
 }
 
+.feedback__mail:hover {
+    opacity: 0.5;
+}
+
 .social__list {
     display: flex;
     margin: 0;
@@ -383,7 +420,30 @@ input[name="togle"] {
 }
 
 .social__item + .social__item {
-    margin-left: 10px;
+    margin-left: 30px;
+}
+
+.social__link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+.social__link--vk {
+    background: url("img/social-vk.svg") no-repeat 50% 50%;
+}
+
+.social__link--codepen {
+    background: url("img/social-codepen.svg") no-repeat 50% 50%;
+}
+
+.social__link--git {
+    background: url("img/social-github.svg") no-repeat 50% 50%;
+}
+
+.social__link:hover {
+    opacity: 0.5;
 }
 
 @keyframes appearance {
