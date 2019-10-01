@@ -4,8 +4,8 @@
   font-style: normal;
   font-display: swap;
   src: local("Oswald Regular"),
-    url("../summary/fonts/oswald-regular.woff2") format("woff2"),
-    url("../summary/fonts/oswald-regular.woff") format("woff");
+    url("/summary/fonts/oswald-regular.woff2") format("woff2"),
+    url("/summary/fonts/oswald-regular.woff") format("woff");
 }
   
 @font-face {
@@ -14,8 +14,8 @@
   font-style: bold;
   font-display: swap;
   src: local("Oswald Bold"),
-    url("../summary/fonts/oswald-bold.woff2") format("woff2"),
-    url("../summary/fonts/oswald-bold.woff") format("woff");
+    url("/summary/fonts/oswald-bold.woff2") format("woff2"),
+    url("/summary/fonts/oswald-bold.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
     font-style: normal;
     font-display: swap;
     src: local("Roboto"),
-      url("../summary/fonts/roboto-regular.woff2") format("woff2"),
-      url("../summary/fonts/roboto-regular.woff") format("woff");
+      url("/summary/fonts/roboto-regular.woff2") format("woff2"),
+      url("/summary/fonts/roboto-regular.woff") format("woff");
   }
 
 .visually-hidden:not(:focus),
