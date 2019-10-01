@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Oswald";
   font-weight: 400;
   font-style: normal;
@@ -16,7 +16,9 @@
   src: local("Oswald Bold"),
     url("https://nikios05.github.io/summary/fonts/oswald-bold.woff2") format("woff2"),
     url("https://nikios05.github.io/summary/fonts/oswald-bold.woff") format("woff");
-}
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic');
 
 @font-face {
     font-family: "Roboto";
