@@ -3,12 +3,18 @@ const nameTitle = document.querySelector(".title__name--left"),
 const arrowLeft = document.querySelector(".slider-switch__arrow--left"),
     arrowRight = document.querySelector(".slider-switch__arrow--right");
 const inputCheck = document.querySelectorAll("[name='togle']");
-
+console.log(document.body.clientWidth)
 
 window.addEventListener("scroll", () => {
-    console.log(nameTitle.style.transform["translateX()"]);
-    nameTitle.style.transform = `translateX(-${(window.pageYOffset * 0.2) + 50}px)`;
-    secondNameTitle.style.transform = `translateX(${(window.pageYOffset * 0.2) + 162}px)`;
+    let shift = 0; 
+    if (document.body.clientWidth < 644 && document.body.clientWidth > 455) {
+        shift = 85;
+    } else if (document.body.clientWidth < 455) {
+        shift = 62;
+    } else shift = 120;
+    
+    nameTitle.style.transform = `translateX(-${(window.pageYOffset * 0.2)}px)`;
+    secondNameTitle.style.transform = `translateX(${(window.pageYOffset * 0.2) + shift}px)`;
 });
 
 let activeInput = 0;

@@ -164,11 +164,11 @@ input[name="togle"] {
 }
 
 .title__name--left {
-    transform: translateX(-50px);
+    /* transform: translateX(-50px); */
 }
 
 .title__name--right {
-    transform: translateX(162px);
+    transform: translateX(120px);
 }
 
 .main-photo {
@@ -665,14 +665,9 @@ input[name="togle"] {
         height: 30px;
     }
 
-    .title__name--left {
-        transform: translateX(0);
-    }
-    
     .title__name--right {
-        transform: translateX(0);
+        transform: translateX(85px);
     }
-
 }
 
 @media (max-width: 454px) {
@@ -705,4 +700,7 @@ input[name="togle"] {
         font-size: 20px;
     }
 
+    .title__name--right {
+        transform: translateX(62px);
+    }
 }
