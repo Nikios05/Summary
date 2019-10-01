@@ -6,8 +6,9 @@ const inputCheck = document.querySelectorAll("[name='togle']");
 
 
 window.addEventListener("scroll", () => {
-    nameTitle.style.transform = `translateX(-${(window.pageYOffset * 0.2) + 150}px)`;
-    secondNameTitle.style.transform = `translateX(${(window.pageYOffset * 0.2) + 272}px)`;
+    console.log(nameTitle.style.transform["translateX()"]);
+    nameTitle.style.transform = `translateX(-${(window.pageYOffset * 0.2) + 50}px)`;
+    secondNameTitle.style.transform = `translateX(${(window.pageYOffset * 0.2) + 162}px)`;
 });
 
 let activeInput = 0;
@@ -28,4 +29,5 @@ function autoSlider() {
     }, 5000)
 };
 autoSlider();
+
 
