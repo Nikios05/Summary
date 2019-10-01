@@ -59,6 +59,7 @@ input[name="togle"] {
     margin-bottom: 65px;
 
     background-color: #d7a223;
+    /* background-color: #198899; */
 }
 
 .container {
@@ -143,9 +144,7 @@ input[name="togle"] {
     align-items: center;
     margin: 0 auto;
     top: 55%;
-    /* left: 50vw; */
     width: 100%;
-    /* transform: translateX(-50%); */
     overflow: hidden;
 }
 
@@ -160,11 +159,7 @@ input[name="togle"] {
     line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.9);
-}
-
-.title__name--left {
-    /* transform: translateX(-50px); */
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .title__name--right {
