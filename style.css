@@ -448,21 +448,24 @@ input[name="togle"] {
 .social__link {
     display: inline-block;
     vertical-align: middle;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 .social__link--vk {
-    background: url("img/social-vk.svg") no-repeat 50% 50%;
+    background-image: url("img/social-vk.svg");
 }
 
 .social__link--codepen {
-    background: url("img/social-codepen.svg") no-repeat 50% 50%;
+    background: url("img/social-codepen.svg");
 }
 
 .social__link--git {
-    background: url("img/social-github.svg") no-repeat 50% 50%;
+    background: url("img/social-github.svg");
 }
 
 .social__link--hh {
@@ -502,14 +505,27 @@ input[name="togle"] {
 }
 
 @media (max-width: 643px) {
+    
+    .site-list {
+        justify-content: space-between;
+    }
+
+    .site-list__item:first-child {
+        margin-right: 0;
+    }
+
+    .site-list__item:nth-child(2) {
+        margin-right: 0;
+    }
+
     .site-list__link {
         font-size: 24px;
         line-height: 24px;
     }
 
     .title__name {
-        font-size: 80px;
-        line-height: 70px;
+        font-size: 70px;
+        line-height: 60px;
     }
     
     .title-section {
@@ -538,8 +554,8 @@ input[name="togle"] {
         line-height: 24px;
     }
 
-    .social__list {
-        max-width: 120px;
+    .social__link--hh {
+        font-size: 30px;
     }
 
     .social__item {
@@ -549,16 +565,42 @@ input[name="togle"] {
     .social__item + .social__item {
         margin-left: 10px;
     }
+
+    .social__link {
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 @media (max-width: 454px) {
+    .title__name {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .feedback-wrapper {
+        padding: 10px 20px;
+    }
+
+    .feedback__desctription {
+        max-width: 160px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
     .site-list__link {
         font-size: 18px;
         line-height: 18px;
     }
 
-    .title__name {
-        font-size: 60px;
-        line-height: 50px;
+    .social__link {
+        width: 20px;
+        height: 20px;
     }
+
+    .social__link--hh {
+        font-size: 20px;
+    }
+
 }
