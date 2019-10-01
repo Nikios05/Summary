@@ -16,9 +16,7 @@
   src: local("Oswald Bold"),
     url("https://nikios05.github.io/summary/fonts/oswald-bold.woff2") format("woff2"),
     url("https://nikios05.github.io/summary/fonts/oswald-bold.woff") format("woff");
-} */
-
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic');
+} 
 
 @font-face {
     font-family: "Roboto";
@@ -29,6 +27,14 @@
       url("https://nikios05.github.io/summary/fonts/roboto-regular.woff2") format("woff2"),
       url("https://nikios05.github.io/summary/fonts/roboto-regular.woff") format("woff");
   }
+
+*/
+
+/* Ипользуется для github pages */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic');
+
+
 
 .visually-hidden:not(:focus),
 .visually-hidden {
