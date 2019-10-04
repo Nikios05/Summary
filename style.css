@@ -629,6 +629,8 @@ input[name="togle"] {
     }
 
     .slider__description {
+        min-height: 120px;
+        margin-bottom: 10px;
         font-size: 14px;
         line-height: 18px;
     }
